@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title></title>
+<style>
+
+*{
+	margin:0;
+	padding: 0;
+	text-decoration:none;
+	text-style: none;
+}
+.sidebal{
+	
+	left:0px;
+	position: absolute;
+	width: 400px;
+	height: 100%;
+          background: #042331;
+}
+.sidebal header{
+	text-align: center;
+	color: white;
+	line-height: 100px;
+	font-size: 70px;
+	background: #063146;
+
+	user-select: none;
+	}
+.sidebal ul a{
+	display: block;
+	width:100%;
+	height: 100%;
+	line-height:130px;
+	font-size: 35px;
+	color: #fff;
+	padding-left: 90px;
+	box-sizing: border-box;
+	border-top: 10px solid rgba(255,255,255,.1);
+	border-bottom:10px solid black;
+	transition:0.3s;
+	}
+ul li:hover a{
+	padding-left:70px;
+}
+.sidebal i{
+		padding-right:50px;
+	}
+	#check{
+	display:none;
+	}
+	label #btn,label #cancel{
+	position:absolute;
+	cursor:pointer;
+	background:#042331;
+	border-radius:5px;
+	}
+	label #btn{
+	left:40px;
+	top:25px;
+	font-size:50px;
+	color:white;
+     padding:11px 5px;
+	}
+	label #cancel{
+	z-index:1111;
+	left:200px;
+	top:17px;
+	font-size:50px;
+	padding:4px 9px;
+	color:#0a5275;
+	}
+	#check:checked ~ label #btn{
+	left:400px;
+	opacity:0;
+	pointer-events:none;
+	}
+</style>
+</head>
+<body>
+<input type="checkbox" id="check" />
+<label for="check">
+<i class="fa fa-bars" id="btn"></i> 
+<i class="fa fa-times" id="cancel"></i>
+</label>
+<div class ="sidebal">
+<header >My app</header>
+<ul>
+
+<li><a href="#" > <i class="fas fa-business-time"></i>Business</a></li>
+<li><a href="#" ><i class="fas fa-envelope"></i>Contact us</a></li>
+<li><a href="#" ><i class="fas fa-cog"></i>Setting</a></li>
+<li><a href="#" > <i class="fas fa-user-plus"></i>Invite</a></li>
+<li><a href="#" ><i class="fas fa-question-circle"></i>Help</a></li>
+</ul>
+</div>
+</body>
+</html>
