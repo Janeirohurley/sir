@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="rn">
+<head>
+<meta charset="UTF-8" />
+<title>count down</title>
+<script>
+i=10;
+function f()
+{
+setTimeout("f()",1000);
+t=document.fo.vr.value=i;
+if(i>0)
+i--;
+else
+clearTimeout(t);
+}
+
+</script>
+<style>
+input[type="text1"]{
+text-align: center;
+margin-top: 20px;
+margin-left:20px;
+width:250px;
+height: 250px;
+font-size:150px;
+border:10px solid rgba(255,0,0,0.1);
+border-radius:300px;
+color:rgb(161,80,0);
+background:linear-gradient(red,black,#332211);
+text-shadow:12px 30px 50px red;
+
+}
+.ma{
+background-color:black;
+width: 300pxx;
+height: 300px;
+
+}
+
+</style>
+</head>
+<body>
+<div class="ma">
+<div>
+<form name="fo">
+<input type="text1" name="vr" />
+</form>
+</div>
+<center><p>	count down</p></center>
+<input type="button" value="commencement" onClick="f()" />
+</div>
+
+</body>
+</html>
